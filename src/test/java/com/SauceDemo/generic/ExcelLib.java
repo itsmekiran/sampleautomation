@@ -1,17 +1,9 @@
 package com.SauceDemo.generic;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.ResourceBundle;
 
-import org.apache.poi.ss.usermodel.Cell;
+
+
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -31,7 +23,7 @@ public class ExcelLib extends CommonOperation{
 
 
 
-  
+
 
     public static String getExcelData(String sheetName , int rowNum , int columnNum) {
         String data="";
