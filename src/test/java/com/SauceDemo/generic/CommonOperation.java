@@ -17,12 +17,13 @@ public class CommonOperation {
 
     public static String choiceForBroswer="";
 
-    static String path=System.getProperty("user.dir");;
+    static String path=System.getProperty("user.dir");
     static String url ="https://www.saucedemo.com/";
    public static String currentClass;
 
     public static void implementAskUser() throws InterruptedException{
-        ResourceReader.readBundle("com.SauceDemo.resourcesXpath."+CommonOperation.currentClass);
+       // ResourceReader.readBundle("com.SauceDemo.resourcesXpath."+CommonOperation.currentClass);
+        ResourceReader.readBundle(CommonOperation.currentClass);
 
 
 
@@ -43,8 +44,8 @@ public class CommonOperation {
 
                 Driver.driver.get(url);
 
-                ResourceReader.readBundle("com.SauceDemo.resourcesXpath."+CommonOperation.currentClass);
-                ResourceReader.readBundle("com.SauceDemo.resourcesXpath.SauceLabsHomepage");
+             //   ResourceReader.readBundle("com.SauceDemo.resourcesXpath."+CommonOperation.currentClass);
+             //   ResourceReader.readBundle("com.SauceDemo.resourcesXpath.SauceLabsHomepage");
 
                 //Driver.driver.findElement(By.id("zc_Textbox_0")).sendKeys("admin");
 
@@ -104,7 +105,7 @@ public class CommonOperation {
 
         try {
 
-            WebDriverWait wait = new WebDriverWait(Driver.driver, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(Driver.driver, Duration.ofSeconds(40));
 
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ResourceReader.readValue(locator)))).sendKeys(InputData);
             implicitWait();

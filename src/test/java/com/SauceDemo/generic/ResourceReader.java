@@ -7,7 +7,7 @@ public class ResourceReader {
 
     static ResourceBundle bundle;
     public static void readBundle(String value){
-        bundle  = ResourceBundle.getBundle(value, Locale.ENGLISH);
+        bundle  = ResourceBundle.getBundle(value, Locale.US);
 
     }
 

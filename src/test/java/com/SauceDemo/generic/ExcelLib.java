@@ -20,19 +20,18 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class ExcelLib extends CommonOperation{
 
 
-    public	static Map<String,String> DataMap = new HashMap<String, String>();
-    public static int p;
-    //public static int rownumforcountingtime;
-    public static boolean togoinDataMapForNextLoop=true;
-    public static int lastRownumforAverage;
-
-    static String path = "C:\\Projects\\SeleniumTesting\\Result";
 
 
 
-    public static void setDataMap(Map<String, String> dataMap) {
-        dataMap = DataMap;
-    }
+
+
+    static String path = "C:\\Users\\kiran\\IdeaProjects\\sampleAutomationProject\\TestData";
+
+
+
+
+
+  
 
     public static String getExcelData(String sheetName , int rowNum , int columnNum) {
         String data="";
